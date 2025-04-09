@@ -23,3 +23,11 @@ Agrega el siguiente bloque dentro del `<Host>` en el archivo `conf/server.xml`:
 <!-- INICIO CONTEXTO SERVICE LOGS JH -->
 <Context path="/logs-service" docBase="${catalina.home}/webapps/logs-service" reloadable="true"/>
 <!-- FIN CONTEXTO SERVICE LOGS JH -->
+
+
+
+
+![imagen](https://github.com/user-attachments/assets/0866c5ce-e9e3-4e30-9b50-bbd457850971)
+
+
+![imagen](https://github.com/user-attachments/assets/422052fd-f575-498b-ba3e-afb4db036320)
