@@ -1,33 +1,32 @@
 # 📄 Logs Service
 
-**Logs Service** es una aplicación web ligera para visualizar el archivo `catalina.out` de un servidor Tomcat en tiempo real, utilizando WebSockets. Su diseño minimiza el impacto en el rendimiento del servidor, permitiendo a administradores y desarrolladores acceder a los logs sin necesidad de acceso al sistema operativo.
+**Logs Service** is a lightweight web application for viewing a Tomcat server's `catalina.out` file in real time, using WebSockets. Its design minimizes the impact on server performance, allowing administrators and developers to access logs without requiring access to the operating system.
 
 ---
 
-## 🚀 Características
+## 🚀 Features
 
-- 🔥 Transmisión en tiempo real del archivo `catalina.out`
-- 🔐 Autenticación por token mediante WebSocket
-- 🧠 Sincronización eficiente sin bloquear procesos del servidor
-- 📦 Integración simple con Tomcat
+- 🔥 Real-time streaming of the `catalina.out` file
+- 🔐 Token authentication using WebSocket
+- ​​🧠 Efficient synchronization without blocking server processes
+- 📦 Simple integration with Tomcat
 
 ---
 
-## 🛠️ Instalación
+## 🛠️ Installation
 
-### 1. Configura el contexto en `server.xml` de Tomcat
+### 1. Configure the context in Tomcat's `server.xml`
 
-Agrega el siguiente bloque dentro del `<Host>` en el archivo `conf/server.xml`:
+Add the following block inside the `<Host>` in the `conf/server.xml` file:
 
 ```xml
-<!-- INICIO CONTEXTO SERVICE LOGS JH -->
+<!-- HOME CONTEXT SERVICE LOGS JH -->
 <Context path="/logs-service" docBase="${catalina.home}/webapps/logs-service" reloadable="true"/>
-<!-- FIN CONTEXTO SERVICE LOGS JH -->
+<!-- END CONTEXT SERVICE LOGS JH -->
+```
+The following shows an overview of how the system in action:
+
+![image](https://github.com/user-attachments/assets/0866c5ce-e9e3-4e30-9b50-bbd457850971)
 
 
-
-
-![imagen](https://github.com/user-attachments/assets/0866c5ce-e9e3-4e30-9b50-bbd457850971)
-
-
-![imagen](https://github.com/user-attachments/assets/422052fd-f575-498b-ba3e-afb4db036320)
+![image](https://github.com/user-attachments/assets/422052fd-f575-498b-ba3e-afb4db036320)
