@@ -1,0 +1,25 @@
+Documentacion  Logs-service:
+
+
+1.) En el server.xml instalar el contexto 
+
+	<!-- INICIO CONTEXTO SERVICE LOGS JH -->
+
+		<Context path="/logs-service" docBase="${catalina.home}/webapps/logs-service" reloadable="true"/>
+
+	<!-- FIN CONTEXTO SERVICE LOGS JH -->
+	
+	
+2.) Copiar el APP en WEBAPPS
+
+	webapps\logs-service
+	
+	
+3.) ( Opcional ) Cambiar el token parametrizado en el web.xml de webapps/logs-service
+
+4.) Ingresar a host/logs-service
+
+ej: https://development.ciadti.co:8051/logs-service/
+
+5.) Ingresar el token parametrizado G7mX2pA9LqT5Z8YvK3NwB0oJ1RfC4D0
+

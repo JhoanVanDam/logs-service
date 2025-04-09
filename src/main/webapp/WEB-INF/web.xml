@@ -1,0 +1,30 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.1"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd">
+
+    <!-- Configuración del Servlet -->
+    <servlet>
+        <servlet-name>MiServlet</servlet-name>
+        <servlet-class>com.logs.service.servlets.MiServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>MiServlet</servlet-name>
+        <url-pattern>/saludo</url-pattern>
+    </servlet-mapping>
+
+    <!-- Habilitar WebSockets en Tomcat -->
+    <listener>
+        <listener-class>org.apache.tomcat.websocket.server.WsContextListener</listener-class>
+    </listener>
+
+
+    <env-entry>
+        <description>Token del servicio ws de logs</description>
+        <env-entry-name>token-service-logs</env-entry-name>
+        <env-entry-type>java.lang.String</env-entry-type>
+        <env-entry-value>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</env-entry-value>
+    </env-entry>
+
+</web-app>
